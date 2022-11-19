@@ -16,10 +16,19 @@ def detectemotion(text):
             dct[label] = i['score']
     
     sort_dct = sorted(dct.items(), key=lambda item: item[1], reverse=True)
-    
-    emotion = f'Your Emotion: {sort_dct[0][0]}({round(sort_dct[0][1],2)}), {sort_dct[1][0]}({round(sort_dct[1][1],2)})'
 
-    return emotion
+    dominate = sort_dct[0][1] > 0.9
+    if dominate:
+        emotion_str = f'Your Emotion: {sort_dct[0][0]}({round(sort_dct[0][1]*100,2)}%)'
+    else:
+        emotion_str = f'Your Emotion: {sort_dct[0][0]}({round(sort_dct[0][1]*100,2)}%), {sort_dct[1][0]}({round(sort_dct[1][1]*100,2)}%)'
+
+    return {
+        'info': emotion_str,
+        'highest_emotion': sort_dct[0][0],
+        'second_emotion': sort_dct[1][0],
+        'is_dominate': dominate
+    }
 
 if __name__ == '__main__':
     text = input()
