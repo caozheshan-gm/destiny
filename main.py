@@ -3,11 +3,9 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from functools import partial
 
 import TeTe
-import pageone
 
 def convert(ui):
     input = ui.lineEdit.text()
-    # result = float(input) * 6.7
     result = input
     ui.lineEdit_2.setText(str(result))
 
