@@ -3,7 +3,7 @@ model/roberta-base/
 
 # trained_models
 final_models/
-
+__pycache__/
 # wandb files
 model_scripts/wandb/
 
