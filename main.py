@@ -3,6 +3,7 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
+
 from functools import partial
 from detectemotion import detectemotion
 from musicreco import musicreco
@@ -25,10 +26,16 @@ if __name__ == '__main__':
     MainWindow = QMainWindow() 
     ui = TeTe.Ui_MainWindow()
     ui.setupUi(MainWindow)
-
-    style_file = './style.qss'
-    style_sheet = QSSLoader.read_qss_file(style_file)
-    MainWindow.setStyleSheet(style_sheet)
+    MainWindow.setWindowTitle("Music & Emotion Predictions")
+    MainWindow.setStyleSheet("#MainWindow{border-image:url(6891668886439_.pic.jpg)}")
+    ui.lineEdit.setStyleSheet("background-color: rgba(255, 255, 255, 0.6);")
+    ui.lineEdit_2.setStyleSheet("background-color: rgba(255, 255, 255, 0.6);")
+    ui.listWidget.setStyleSheet("background-color: rgba(255, 255, 255, 0.6);")
+    ui.pushButton.setStyleSheet("background-color: rgba(255, 255, 255, 0.6);")
+    
+    # style_file = './style.qss'
+    # style_sheet = QSSLoader.read_qss_file(style_file)
+    # MainWindow.setStyleSheet(style_sheet)
 
     MainWindow.show()
     ui.pushButton.clicked.connect(partial(convert,ui))

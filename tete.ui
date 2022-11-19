@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>777</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,96 +17,147 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>200</y>
+      <x>150</x>
+      <y>500</y>
       <width>113</width>
       <height>32</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 255);
+		color: white;
+		border-radius: 10px;  border: 2px groove gray;
+		border-style: outset;
+}
+
+</string>
     </property>
     <property name="text">
      <string>AI guess</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>20</y>
-      <width>181</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Music &amp; Emotion prediction</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>100</y>
-      <width>351</width>
-      <height>91</height>
+      <x>60</x>
+      <y>170</y>
+      <width>301</width>
+      <height>311</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>270</y>
-      <width>351</width>
-      <height>61</height>
+      <x>400</x>
+      <y>210</y>
+      <width>321</width>
+      <height>51</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>90</x>
       <y>70</y>
-      <width>351</width>
-      <height>16</height>
+      <width>621</width>
+      <height>61</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>Enter a sentence Let we know what is your feeling today</string>
+     <string>Enter a sentence, let we know what is your feeling today</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>240</y>
-      <width>60</width>
-      <height>16</height>
+      <x>400</x>
+      <y>170</y>
+      <width>71</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>emotion</string>
+     <string>Emotion</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>360</y>
-      <width>60</width>
+      <x>400</x>
+      <y>280</y>
+      <width>101</width>
       <height>16</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>music</string>
+     <string>Music list</string>
     </property>
    </widget>
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>390</y>
-      <width>256</width>
-      <height>192</height>
+      <x>400</x>
+      <y>310</y>
+      <width>321</width>
+      <height>221</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
     </property>
    </widget>
   </widget>
@@ -115,13 +166,15 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>777</width>
      <height>24</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../image.qrc"/>
+ </resources>
  <connections/>
 </ui>
