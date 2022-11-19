@@ -99,13 +99,13 @@
      <string>music</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>400</y>
-      <width>351</width>
-      <height>151</height>
+      <x>310</x>
+      <y>390</y>
+      <width>256</width>
+      <height>192</height>
      </rect>
     </property>
    </widget>
