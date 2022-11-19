@@ -27,6 +27,8 @@ def detectemotion(text):
         'info': emotion_str,
         'highest_emotion': sort_dct[0][0],
         'second_emotion': sort_dct[1][0],
+        'highest_score': sort_dct[0][1],
+        'second_score': sort_dct[1][1],
         'is_dominate': dominate
     }
 
