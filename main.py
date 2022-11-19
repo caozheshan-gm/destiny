@@ -1,12 +1,13 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from functools import partial
+from detectemotion import detectemotion
 
 import TeTe
 
 def convert(ui):
     input = ui.lineEdit.text()
-    result = input
+    result = detectemotion(input)['info']
     ui.lineEdit_2.setText(str(result))
 
 if __name__ == '__main__':
