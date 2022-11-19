@@ -4,21 +4,20 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from functools import partial
-#from detectemotion import detectemotion
+from detectemotion import detectemotion
+from musicreco import musicreco
 from loadqs import QSSLoader
 
 import TeTe
 
 def convert(ui):
     input = ui.lineEdit.text()
-    #emotionresult = detectemotion(input)['info']
-    musicresult = ['music1', 'music2', 'music3']
+    emotionresult = detectemotion(input)
+    musicresult = musicreco(emotionresult)
 
-    ui.lineEdit_2.setText("emotion result")
+    ui.lineEdit_2.setText(emotionresult['info'])
     ui.listWidget.clear()
-    ui.listWidget.addItems(musicresult)
-
-
+    ui.listWidget.addItems(musicresult[1])
 
 
 if __name__ == '__main__':
