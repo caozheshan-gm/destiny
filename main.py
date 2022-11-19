@@ -1,3 +1,6 @@
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from functools import partial
