@@ -17,47 +17,60 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>230</y>
+      <x>320</x>
+      <y>280</y>
       <width>113</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>AI guess</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>80</y>
-      <width>60</width>
-      <height>16</height>
+      <x>330</x>
+      <y>90</y>
+      <width>121</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Music &amp; Emotion</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>220</y>
-      <width>113</width>
-      <height>21</height>
+      <x>260</x>
+      <y>190</y>
+      <width>251</width>
+      <height>71</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>230</y>
-      <width>113</width>
-      <height>21</height>
+      <x>290</x>
+      <y>340</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>160</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Let we know what is your feeling today</string>
     </property>
    </widget>
   </widget>
