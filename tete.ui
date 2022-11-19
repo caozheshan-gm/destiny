@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>280</y>
+      <y>190</y>
       <width>113</width>
       <height>32</height>
      </rect>
@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>90</y>
+      <y>40</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -44,7 +44,7 @@
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>190</y>
+      <y>100</y>
       <width>251</width>
       <height>71</height>
      </rect>
@@ -53,10 +53,10 @@
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>340</y>
-      <width>191</width>
-      <height>31</height>
+      <x>270</x>
+      <y>260</y>
+      <width>221</width>
+      <height>61</height>
      </rect>
     </property>
    </widget>
@@ -64,7 +64,7 @@
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>160</y>
+      <y>70</y>
       <width>261</width>
       <height>16</height>
      </rect>
@@ -73,17 +73,40 @@
      <string>Let we know what is your feeling today</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>300</y>
-      <width>113</width>
-      <height>32</height>
+      <x>350</x>
+      <y>240</y>
+      <width>60</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>redirect</string>
+     <string>emotion</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>360</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>music</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>400</y>
+      <width>231</width>
+      <height>111</height>
+     </rect>
     </property>
    </widget>
   </widget>

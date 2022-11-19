@@ -10,8 +10,13 @@ import TeTe
 
 def convert(ui):
     input = ui.lineEdit.text()
-    result = detectemotion(input)['info']
-    ui.lineEdit_2.setText(str(result))
+    emotionresult = detectemotion(input)['info']
+    musicreult = "music"
+
+    ui.lineEdit_2.setText("emotion result")
+    ui.lineEdit_3.setText("music result")
+
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
